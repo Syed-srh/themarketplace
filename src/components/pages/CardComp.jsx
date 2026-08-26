@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CardComp = ({ product, category="products" }) => {
+  const navigate = useNavigate();
+
   const handleCardClick = () => {
-    window.open(`/cartpayment/${category}/${product.id}`, '_blank');
+    navigate(`/cartpayment/${category}/${product.id}`);
   };
 
   return (
