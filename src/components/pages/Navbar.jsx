@@ -46,7 +46,7 @@ const Navbar = ({ cartItems = [], orders = [], onLogout }) => {
           <div className="flex items-center gap-6">
             <div 
               onClick={() => navigate('/products')} 
-              className="h-14 w-36 sm:w-44 bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl overflow-hidden p-1 shadow-sm hover:shadow-md transition cursor-pointer flex items-center justify-center"
+              className="h-14 w-36 sm:w-44 rounded-xl overflow-hidden p-1 shadow-sm hover:shadow-md transition cursor-pointer flex items-center justify-center"
             >
               <img src={marketplaceLogo} alt="themarketplace Logo" className="h-full w-full object-contain" />
             </div>
